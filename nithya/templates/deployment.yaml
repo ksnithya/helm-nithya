@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: nithya-resume
+  name: nithya-resume
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nithya-resume
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: nithya-resume
+    spec:
+      containers:
+      - image: nithyaks/nithya-resume:latest
+        name: nithya-resume
+        resources:
+          requests:
+            cpu: "1"
+            memory: "500Mi"
+          limits:
+            cpu: "1"
+            memory: "500Mi"
+
+
+status: {}
