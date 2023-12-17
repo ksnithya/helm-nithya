@@ -18,7 +18,7 @@ spec:
         app: nithya-resume
     spec:
       containers:
-      - image: nithyaks/nithya-resume:latest
+      - image: 822626997628.dkr.ecr.ap-south-1.amazonaws.com/nithya-image:latest
         name: nithya-resume
         resources:
           requests:
